@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Warensendung 1x1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;" />
+    <link href="https://unpkg.com/cirrus-ui" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <style>
+        body{
+    margin-top:40px;
+    }
+    .smalli{
+    line-height: 1.2;
+    text-align: left;
+    }
+    .linki{
+    color:black;
+    }
+    @media(max-width: 770px) {
+    .uno{
+        display: none;
+    }}
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="row text-center">
+            <h2 class="title">Warensendung 1x1</h2>
+            <h5 class="light">Der richtige Tarif, für's richtige Paket.</h5>
+            <p style="text-align:justify;">Bei dem versenden von Warensendungen gilt, dass die Sendungen jederzeit
+                geprüft (geöffnet) werden kann und darf somit nicht fest verschlossen sein. Zudem sind Warensendungen
+                nicht versichert noch verfolgbar. Die Regellaufzeit einer Warensendung beträgt 4-7 Werktage. Es darf
+                außer der Ware keine weiteren Artikel (Rechnungen etc.) mitgesendet werden.</p>
+            <div id="all">
+                <div class="row fluid-container">
+                    <div class="col-10">
+                        <div class="form-group">
+                            <label class="form-group-label">L</label>
+                            <input type="number" class="form-group-input" id="laenge" placeholder="Länge (cm)"></input>
+                        </div>
+                    </div>
+                    <div class="col-1 level uno">
+                        <div class="level-item">✕</div>
+                    </div>
+                    <div class="col-10">
+                        <div class="form-group">
+                            <label class="form-group-label">B</label>
+                            <input type="number" class="form-group-input" id="breite" placeholder="Breite (cm)"></input>
+                        </div>
+                    </div>
+                    <div class="col-1 level uno">
+                        <div class="level-item">✕</div>
+                    </div>
+                    <div class="col-10">
+                        <div class="form-group">
+                            <label class="form-group-label">H</label>
+                            <input type="number" class="form-group-input" id="hoehe" placeholder="Höhe (cm)"></input>
+                        </div>
+                    </div>
+                    <div class="col-1 level uno">
+                        <div class="level-item">✕</div>
+                    </div>
+                    <div class="col-10">
+                        <div class="form-group">
+                            <label class="form-group-label">G</label>
+                            <input type="number" class="form-group-input" id="gewicht" placeholder="Gewicht (g)"></input>
+                        </div>
+                    </div>
+                </div>
+                <div id="result">
+                    <div class="row">
+                    </div>
+                </div>
+<script src="js/main.js"></script>
+</body>
+</html>
